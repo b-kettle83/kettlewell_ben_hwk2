@@ -49,25 +49,93 @@ nav ul li a {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
 }
 
-#dwight {
-    background-position: -150px 0px;
-}
-
-#jim {
-    background-position: -300px 0px;
-}
+#michael_box {
+    box-shadow: 0px 155px 0px #5fa4ff inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #michael_box:hover {
+    box-shadow: 0 220px 0 0 #5fa4ff inset;
+ }
+ 
+ 
+ #dwight {
+    background-position: -150px 0;
+ }
+ 
+ 
+ #dwight_box {
+    box-shadow: 0px 155px 0px #ff8921 inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #dwight_box:hover {
+    box-shadow: 0 220px 0 0 #ff8921 inset;
+ }
+ 
+ 
+ #jim {
+    background-position: -300px 0;
+ }
+ 
+ 
+ #jim_box {
+    box-shadow: 0px 155px 0px #3ada0e inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #jim_box:hover {
+    box-shadow: 0 220px 0 0 #3ada0e inset;
+ } 
 
 #pam {
     background-position: -450px 0px;
 }
 
+#pam_box {
+    box-shadow: 0px 155px 0px #591277 inset;
+    transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ 
+ #pam_box:hover {
+    box-shadow: 0 220px 0 0 #591277 inset;
+ } 
+
 #andy {
     background-position: -600px 0px;
 }
 
+#andy_box {
+    box-shadow: 0px 155px 0px #c00d00 inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+ 
+ 
+#andy_box:hover {
+    box-shadow: 0 220px 0 0 #c00d00 inset;
+} 
+
 #angela {
     background-position: -750px 0px;
 }
+
+#angela_box {
+    box-shadow: 0px 155px 0px #dfbd24 inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+ 
+#angela_box:hover {
+    box-shadow: 0 220px 0 0 #dfbd24 inset;
+} 
+
+#michael:hover, #dwight:hover, #jim:hover, #pam:hover, #andy:hover, #angela:hover {
+    background-position-y: -150px;
+ }
+ 
 
 .hidden {
     display: none;
