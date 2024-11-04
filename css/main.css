@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0px;
+}
+
+nav {
+    background-color: rgb(181, 181, 181);
+    background-image: url(../images/heroimage.jpg);
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    height: 220px;
+    background-color: black;
+    margin: 10px;
+}
+
+nav ul li h4 {
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+#header_logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
+}
+
+#dwight {
+    background-position: -150px 0px;
+}
+
+#jim {
+    background-position: -300px 0px;
+}
+
+#pam {
+    background-position: -450px 0px;
+}
+
+#andy {
+    background-position: -600px 0px;
+}
+
+#angela {
+    background-position: -750px 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/spritesheet.png);
+}
+
+.lightbox {
+    display:none;
+}
