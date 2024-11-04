@@ -2,7 +2,7 @@ body {
     padding: 0;
     border: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
     background-color: black;
     color: white;
@@ -18,6 +18,7 @@ nav {
     background-image: url(../images/heroimage.jpg);
     background-size: cover;
     background-blend-mode: screen;
+    background-position-y: -150px;
 }
 
 nav ul {
@@ -38,9 +39,11 @@ nav ul li h4 {
     color: white;
 }
 
-nav ul li a {
+a {
     text-decoration: none;
+    color: white;
 }
+
 
 #header_logo {
     width: 300px;
@@ -136,6 +139,25 @@ nav ul li a {
     background-position-y: -150px;
  }
  
+ #lightbox2 {
+    background-image: url(../images/dwightBG.png)
+ }
+
+ #lightbox3 {
+    background-image: url(../images/jimBG.png)
+ }
+
+ #lightbox4 {
+    background-image: url(../images/pamBG.png)
+ }
+
+ #lightbox5 {
+    background-image: url(../images/andyBG.png)
+ }
+
+ #lightbox6 {
+    background-image: url(../images/angelaBG.png)
+ }
 
 .hidden {
     display: none;
@@ -148,5 +170,60 @@ nav ul li a {
 }
 
 .lightbox {
-    display:none;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    background-image: url(../images/michaelBG.png);
+    background-repeat: no-repeat;
+    background-size: 75vh;
+    background-position: 0px bottom;
+    display: none;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.lightbox article {
+    background-color: black;
+    width: 800px;
+    padding: 15px;
+    border: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    margin: 25px 25px auto auto;
+}
+
+.lightbox_header {
+    display: flex;
+}
+
+.lightbox a, .lightbox h5 {
+    font-style: bold;
+    
+}
+
+.lightbox a {
+    text-align: right;
+    font-size: 32px;
+    margin: 15px 25px auto auto;
+}
+
+.lightbox h5 {
+    text-align: left;
+    font-size: 20px;
+    font-style: bold;
+    margin: 25px auto auto 25px;
+}
+
+.lightbox p {
+    width: 800px;
+    margin: 25px 25px auto auto;
+    font-size: 20px;
 }
