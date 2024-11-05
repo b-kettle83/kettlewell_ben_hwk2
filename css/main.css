@@ -1,7 +1,9 @@
+/* Style that ensures the page is always 100% filled to the bottom of the page */
 html, body {
     height: 100%;
 }
 
+/* Default styles for items on the page */
 body {
     padding: 0;
     margin: 0;
@@ -12,6 +14,7 @@ body {
     height: 100%;
 }
 
+/* Style for the header and nav */
 header {
     background-color: white;
     padding: 10px 0px;
@@ -25,6 +28,8 @@ nav {
     background-position-y: -150px;
 }
 
+/* Style for the list to have the text have no style, and for the list to be flex and 
+wrapping with center justified content*/
 nav ul {
     list-style-type: none;
     padding: 0px;
@@ -33,21 +38,25 @@ nav ul {
     flex-wrap: wrap;
 }
 
+/* Style for the list items to have a certain height, background colour, and margin */
 nav ul li {
     height: 220px;
     background-color: black;
     margin: 10px;
 }
 
+/* Style for h4 text in the list items to be white */
 nav ul li h4 {
     color: white;
 }
 
+/* Style for a text */
 a {
     text-decoration: none;
     color: white;
 }
 
+/* Style for footer, ensuring it is pushed to the bottom of the page and sticky */
 footer {
     padding: 20px 0;
     text-align: center;
@@ -57,12 +66,17 @@ footer {
     top: 100%;
 }
 
+/* Style to determine header logo height and shadow */
 #header_logo {
     width: 400px;
     margin: 0 auto;
     display: block;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
 }
+
+/* Styles for each character's icon in the list, with each having a box shadow that expands
+into the text area when hovered over. Also, moving the spritesheet over for each character
+so that they proper character's face appears in the box */
 
 #michael_box {
     box-shadow: 0px 155px 0px #5fa4ff inset;
@@ -129,7 +143,6 @@ footer {
     transition: box-shadow 0.2s ease-in-out;
 }
  
- 
 #andy_box:hover {
     box-shadow: 0 220px 0 0 #c00d00 inset;
 } 
@@ -147,15 +160,23 @@ footer {
     box-shadow: 0 220px 0 0 #dfbd24 inset;
 } 
 
+/* Whenever a character is hovered over, move the spritesheet to put the coloured version of that
+character's photo into the box(The coloured version also has a slight offset to make the image look
+like it moves up a little) */
+
 #michael:hover, #dwight:hover, #jim:hover, #pam:hover, #andy:hover, #angela:hover {
     background-position-y: -150px;
 }
 
+/* Style to align the instructions in the center with some padding */
 #instructions {
     padding: 20px;
     text-align: center;
 }
  
+/* Styles to change the background image depending on which lightbox is opened, in order to align with
+which character was clicked */
+
 #lightbox2 {
     background-image: url(../images/dwightBG.png)
 }
@@ -176,16 +197,21 @@ footer {
     background-image: url(../images/angelaBG.png)
 }
 
+/* Style to hide elements that aren't meant to be seen */
 .hidden {
     display: none;
 }
 
+/* Style for each image in the sprite sheet to have the dimensions of each charachter square in the sheet,
+as well as giving the background image */
 .sprite {
     width: 150px;
     height: 150px;
     background-image: url(../images/spritesheet.png);
 }
 
+/* Style for the lightboxes, giving them a size equal to the window with a translucent background, as well as
+a background image. This style starts hidden */
 .lightbox {
     width: 100vw;
     height: 100vh;
@@ -201,10 +227,12 @@ footer {
     display: none;
 }
 
+/* When a character is clicked, their lightbox appears */
 .lightbox:target {
     display: block;
 }
 
+/* Style that makes a box for the character bio inside of the lightbox */
 .lightbox article {
     background-color: black;
     width: 800px;
@@ -217,15 +245,18 @@ footer {
     margin: 25px 25px auto auto;
 }
 
+/* Style to make the top section of the lightbox flex so that the name and X appear
+on the same line */
 .lightbox_header {
     display: flex;
 }
 
+/* Style to make a and h5 text bold in the lightbox */
 .lightbox a, .lightbox h5 {
     font-style: bold;
-    
 }
 
+/* Styles for lightbox a, h5, and p text */
 .lightbox a {
     text-align: right;
     font-size: 32px;
